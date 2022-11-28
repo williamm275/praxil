@@ -9,7 +9,10 @@
   </head>
   <body>
     <nav>
-      <img src="./images/logo-white.svg" alt="white logo" />
+      <div class="nav-left">
+        <img src="./images/logo-black.svg" alt="white logo" />
+        <p>Praxil</p>
+      </div>
       <ul>
         <li><a href="./index.html">home</a></li>
         <li><a href="./contact.html">contact</a></li>
@@ -22,12 +25,12 @@
       <form action="/form-handling-url" method="post">
         <fieldset>
           <div class="entry-name">
-            <label for="firstName">First name:</label>
+            <label for="firstName">First name</label>
             <input type="text" id="firstName" name="first_name" size="30" />
           </div>
 
           <div class="entry-name">
-            <label for="lastName">Last name:</label>
+            <label for="lastName">Last name</label>
             <input type="text" id="lastName" name="last_name" size="30" />
           </div>
 
@@ -38,7 +41,7 @@
 
           <div class="message">
             <label for="message">Message</label>
-            <textarea id="message" name="user_message" rows="3"></textarea>
+            <textarea id="message" name="user_message" cols="37" rows="8">Your message</textarea>
           </div>
 
           <div class="checkboxs">
@@ -71,7 +74,10 @@
     </main>
 
     <footer>
-      <img src="./images/logo-black.svg" alt="black logo" />
+      <div class="footer-left-align">
+      <img src="./images/logo-white.svg" alt="black logo">
+      <p>Praxil</p>
+      </div>
       <p>copyright © 2022 - praxil</p>
     </footer>
   </body>
