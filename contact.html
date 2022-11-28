@@ -1,26 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Praxil Contact</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <img src="" alt="">
-        <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#">contact</a></li>
-            <li><a href="#">resources</a></li>
-            <li><a href="#">work</a></li>
-        </ul>
+      <img src="./images/logo-white.svg" alt="white logo" />
+      <ul>
+        <li><a href="./index.html">home</a></li>
+        <li><a href="./contact.html">contact</a></li>
+        <li><a href="./resources.html">resources</a></li>
+        <li><a href="./work.html">work</a></li>
+      </ul>
     </nav>
 
+    <main>
+      <form action="/form-handling-url" method="post">
+        <fieldset>
+          <div class="entry-name">
+            <label for="firstName">First name:</label>
+            <input type="text" id="firstName" name="first_name" size="30" />
+          </div>
+
+          <div class="entry-name">
+            <label for="lastName">Last name:</label>
+            <input type="text" id="lastName" name="last_name" size="30" />
+          </div>
+
+          <div class="entry-name">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email_address" size="30" />
+          </div>
+
+          <div class="message">
+            <label for="message">Message</label>
+            <textarea id="message" name="user_message" rows="3"></textarea>
+          </div>
+
+          <div class="checkboxs">
+            <div class="newsletter">
+              <input
+                class="checkbox-size"
+                type="checkbox"
+                id="signUp"
+                name="sign_up"
+              />
+              <label for="signUp">Sign up for news</label>
+            </div>
+
+            <div class="terms">
+              <input
+                class="checkbox-size"
+                type="checkbox"
+                id="signUp"
+                name="sign_up"
+              />
+              <label for="signUp">Agree to terms</label>
+            </div>
+          </div>
+
+          <div>
+            <button type="submit">Send</button>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+
     <footer>
-        <img src="" alt="">
-        <p></p>
+      <img src="./images/logo-black.svg" alt="black logo" />
+      <p>copyright © 2022 - praxil</p>
     </footer>
-</body>
+  </body>
 </html>
